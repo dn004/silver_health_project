@@ -1,0 +1,146 @@
+/* Font */
+@font-face {
+    font-family: 'Habibi';
+    src: url(font/Habibi-Regular.ttf);
+  }
+  
+  /* Root Variables */
+  :root {
+    --primary-color: #D8A353;
+    --accent-color: #FFFFFF;
+  }
+  
+  .opening_page {
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+    max-height: 100vh; /* Set a maximum height to restrict scrolling to viewport height */
+  }
+  
+  /* Background */
+  .opening_page {
+    background: url("image/background.jpg") no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 721px;
+    margin: 0 auto;
+    font-family: 'Habibi';
+  }
+  
+  .header_nav a {
+    text-decoration: none;
+    margin-left: 29px;
+    font-size: 36px;
+    color: var(--primary-color);
+  }
+  
+  /* Main Section */
+  main {
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    color: var(--accent-color);
+  }
+  
+  .big_title {
+    font-family: 'Habibi';
+    font-size: 75px;
+    line-height: 94px;
+    color: var(--primary-color);
+  }
+  
+  .motto {
+    font-family: 'Habibi';
+    font-size: 36px;
+    line-height: 50px;
+  }
+  
+  .button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    font-family: 'Habibi';
+    font-size: 40px;
+    background:var(--primary-color);
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* SECOND PAGE */
+  
+  .second_page {
+    position: relative;
+    z-index: 10;
+    max-height: 100vh;
+    height: 982px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-family: "habibi";
+    padding-bottom: 100px;
+    padding-top: 0px;
+  }
+  
+  .sentence {
+    position: relative;
+    display: inline-block;
+    left: 124px;
+    top: 64px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 68px;
+    color:#000000;
+  }
+  
+  .circlecontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1373px;
+    padding-top: 100px;
+  }
+  
+  .circle1, .circle2, .circle3 {
+    display: inline-block;
+    background:#000000;
+    width: 317px;
+    height: 317px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 36px;
+    
+  }
+  
+  .second_page_footer {
+    background-color:#000000;
+    margin: 0 auto;
+    position: absolute;
+    height: 267px;
+    left: 0px;
+    top: 714px;
+    padding-left: 143px;
+    
+    color:var(--primary-color);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  .closing_page{
+    font-family: "habibi";
+    color:#000000;
+    
+
+  }
