@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validated Sign Up Form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="label">User Sign Up</h1>
+        <form class="signup_form" action="../index.html" method="post" name="form" onsubmit="return validated()">
+            <div class="font">Email</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="email_error" class="error">Please enter valid email</div>
+            <div class="font">Phone Number</div>
+            <input autocomplete="off" type="text" name="phone">
+            <div id="phone_error" class="error">Please fill up your Phone Number (numbers only)</div>
+            <div class="font font2">Password</div>
+            <input type="password" name="password">
+            <div id="pass_error" class="error">Password must be at least 6 characters long</div>
+            <div class="font font2"> Repeat Password</div>
+            <input type="password" name="repeat_password">
+            <div id="repeat_pass_error" class="error">Passwords do not match</div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>    
+    <script src="signup.js"></script>
+</body>
+</html>
