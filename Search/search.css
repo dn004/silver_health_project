@@ -1,0 +1,79 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Text color */
+    background-color: #f1f1f1; /* Background color */
+}
+
+/* Header styles */
+.header {
+    background-color: #004080; /* Darker shade of blue for the header */
+    color: #fff; /* Text color for the header */
+    padding: 1rem;
+    text-align: center;
+}
+
+.header-title {
+    margin: 0;
+}
+
+/* Search bar styles */
+.search-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#search-input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+
+#search-button {
+    padding: 6px 12px;
+    background-color: #007bff; /* Blue color for the search button */
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* illness card styles */
+.illness-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.illness-card {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.illness-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.illness-company {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.illness-location {
+    color: #666;
+}
+
+.illness-details {
+    display: none;
+}
+
+/* Add more custom styles as needed */
