@@ -50,9 +50,8 @@ function email_Verify(){
 }
 
 function phone_Verify() {
-    // Remove non-numeric characters from the phone number input
     phone.value = phone.value.replace(/[^\d]/g, '');
-    // Update the error message visibility based on input value
+
     if (phone.value.trim() === '') {
         phone.style.border = "1px solid red";
         phone_error.style.display = "block";
@@ -71,7 +70,7 @@ function pass_Verify(){
 }
 
 function validateEmail(email) {
-    // Regular expression to check the email format
+
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }

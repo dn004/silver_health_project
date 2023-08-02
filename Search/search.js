@@ -1,5 +1,4 @@
 
-// JavaScript to toggle the display of illness details when an illness card is clicked
 
 const illnessCards = document.querySelectorAll('.illness-card');
 
@@ -25,3 +24,33 @@ searchInput.addEventListener('input', () => {
         }
     });
 });
+
+// popup
+
+const popupContainer = document.getElementById('popup-container');
+const popupIllnessTitle = document.getElementById('popup-illness-title');
+const popupIllnessDetails = document.getElementById('popup-illness-details');
+const closeBtn = document.getElementById('close-btn');
+
+illnessCards.forEach((card) => {
+    card.addEventListener('click', () => {
+        const illnessTitle = card.querySelector('.illness-title').textContent;
+        const illnessDetails = card.querySelector('.illness-details').innerHTML;
+
+        openPopup(illnessTitle, illnessDetails);
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    closePopup();
+});
+
+function openPopup(title, details) {
+    popupIllnessTitle.textContent = title;
+    popupIllnessDetails.innerHTML = details;
+    popupContainer.style.display = 'block';
+}
+
+function closePopup() {
+    popupContainer.style.display = 'none';
+}
