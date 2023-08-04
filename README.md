@@ -1,6 +1,6 @@
 # Silver Health Project
 
-Welcome to the Silver Health Project repository! This project is designed to improve health awareness and provide valuable health-related information.
+Welcome to the Silver Health Project repository! This project is designed to improve health awareness and provide valuable health-related to elders in our communities.
 
 ## Cloning the Repository
 
